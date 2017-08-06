@@ -1,0 +1,23 @@
+Classes and IDs are some of the most useful attributes, they
+ are used to reference elements which can then be used to style
+ with CSS or for interaction using JavaScript. For example
+ , we might have restaurant website with some
+ advertised dishes
+ 
+ Classes
+ 
+ <body>
+     <p>Rocket Drizzle salad</p>
+     <p>All about the Beets</p>
+     <p>Great bowl of Broccoli</p>
+     <p>Red Lentil Masala with Spinach</p>
+     <p>Peri Peri double Chicken</p>
+ </body>
+ 
+ <body>
+     <p class="veg">Rocket Drizzle Salad</p> <!--added veg classes-->
+     <p class="veg">All about the Beets</p>
+     <p class="veg">Great bowl of Broccoli</p>
+     <p class="veg main" Lentil Masala with Spinach</p><!--added veg and main classes-->
+     <p class="meat main">Peri Peri double Chicken</p> <!--added main and meat classes-->
+ </body>

@@ -1,0 +1,15 @@
+HTML has hundreds of elements. If you want to see a complete list, have a look at the Mozilla Developer Network. Some of the most common elements are listed below:
+
+    <!DOCTYPE html> is the document type declaration and is the first element on the page. We are specifying this is an HTML document rather than any other type, i.e XML. This declaration tells that the content is HTML 5 compliant.
+    <html> surrounds all the HTML content.
+    The document <head> contains the metadata about the document, such as its title and any links to external stylesheets and scripts.
+    <title> is the title of the document. Browsers display this at the top of the browser tab.
+    <body> is the primary visible content of the page.
+    <h1> to <h6> are tags for headings. <h1> is the top-level heading. They are numbered in order of importance.
+    <p> is the tag indicating for a paragraph of text.
+    Unordered/Bulleted lists are specified with <ul>. Ordered lists <ol> are often numbered. Both <ul> and <ol> should include <li> elements to specify list items.
+    <em> indicates emphasis, typically rendered in italics.
+    <strong> indicates additional emphasis, typically rendered in boldface.
+    <a> represents a link. It’s typically rendered as underlined, blue text – unless otherwise specified.
+    <span> is simply a span of text, typically embedded in another element like <p>. Often used to highlight particular words or phrases in a paragraph.
+    <div> stands for division. Used for grouping and containing related elements.

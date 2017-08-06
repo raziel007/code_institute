@@ -1,0 +1,16 @@
+Elements often have associated attributes. Some elements require
+ attributes to function. Take the <img> tag used to display an
+ image. The tag is self-closing so a perfectly valid implementation
+ would be </img>. However, in the browser, this will display
+ nothing. An <img> needs a source location attribute to point
+ to where the image is stored. This is supplied by src attribute.
+ This is where you include the path to the image you want to
+ display. The image can live on your machine, or it can be a URL
+ to another web page, or even another website.
+
+ <body>
+     <h1>My Great Page</h1>
+     <img src="img/jazzCats.jpg" />
+ </body>
+ 
+ 

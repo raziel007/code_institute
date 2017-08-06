@@ -1,0 +1,3 @@
+
+
+left margin + right margin + left border + right border + left padding + right padding + content area width = total box width 
