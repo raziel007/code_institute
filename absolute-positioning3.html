@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Absolute Positioning links</title>
+		<link href= 'http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		
+	
+	
+#container {
+		margin-right: auto;
+		margin-left: auto;
+		width: 960px;
+		padding: 10px;
+		border-radius: 10px; 
+		font-size: 20;
+		font-family: roboto;
+}
+
+.box {	
+		position: relative;
+		width: 100%;
+		background-color: #81BBC9;
+		margin-bottom: 10px;
+		font-size: 20;
+		text-align: center;
+		border-radius: 10px;
+		padding: 30px;
+		font-family: roboto;
+}
+
+#sidebar {
+	    -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 470px;
+		padding-right: 10px;
+		margin-right: 10px;
+		padding-left: 10px;
+		display: inline-block;
+
+	}
+	
+
+	#content {
+	   -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 470px;
+        margin-left: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+	}
+	#toTopRight {
+                position: absolute; 
+                bottom: 10px; 
+                right: -80px;
+            }
+
+    #toTopLeft {
+                position: absolute; 
+                bottom: 0; 
+                left: -80px;
+            }
+
+    p {
+                padding-bottom: 50px;
+            }
+		
+		</style>
+	</head>
+	<body>
+	
+		
+		<div id="container">
+			<div class="box"><h1>Header</h1></div>
+			<div class="box" id="side"><h2>Sidebar</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</div>
+			<div class="box" id="cont"><h2>Content</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</div>
+			<div class="box"><h2>Footer</h2></div>
+		</div>
+		
+
+		
+		</body>
+</html>
