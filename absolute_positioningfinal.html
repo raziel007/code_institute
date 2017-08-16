@@ -6,15 +6,19 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <style type="text/css">
             #container {
-                margin-right: auto; /*center container with margins left & right set to auto*/
+                position: relative;
+                margin-right: auto;
                 margin-left: auto;
-                width: 960px; /*to center an element it must have a width*/
+                width: 960px; 
                 border-radius: 10px;
-                padding: 10px;
-                font-size: 0; /* for inline-block spacing issues*/
+                padding 10px;
+                padding-top: 200px
+                font-size: 0;
+                
+                
             }
             .box {
-                position: relative; /*Must be relative*/
+                position: relative; 
                 width: 100%;
                 background-color: #81BBC9;
                 margin-bottom: 10px;
@@ -25,8 +29,8 @@
                 padding: 30px 0;
             }
             
-            #sidebar {
-                /*add vendor prefixes for border-box*/
+            .sidebar {
+                
                 -webkit-box-sizing: border-box;
                 -moz-box-sizing: border-box;
                 box-sizing: border-box;
@@ -37,8 +41,8 @@
                 padding-right: 10px;
             }
             
-            #content {
-                /*add vendor prefixes for border-box*/
+            .content {
+                
                 -webkit-box-sizing: border-box;
                 -moz-box-sizing: border-box;
                 box-sizing: border-box;
@@ -50,40 +54,63 @@
             }
             
             #toTopRight {
-                position: absolute; /* Absolute Link */
-                bottom: 0; /* Offset however we wish*/
+                position: absolute; 
+                bottom: 0; 
                 right: -80px;
             }
             #toTopLeft {
-                position: absolute; /* Absolute Link */
-                bottom: 0; /* Offset however we wish*/
+                position: absolute;
+                bottom: 0; 
                 left: -80px;
             }
             p {
                 padding-bottom: 50px;
             }
+                #header{ top: 0px;
+                right: 0px;
+                position: fixed;
+                border: 2px;
+                z-index: 100;
+            }
+        
+        
+        
         </style>
     </head>
     <body>
+        
         <div id="container">
             <div id="header" class="box">
                 <h1>Header</h1>
             </div>
 
-            <div id="sidebar" class="box">
+            <div class="box content">
                 <h2>Sidebar</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
-                <a href="#"><img id="toTopLeft" src="images/arrow.png" alt="Link to top"></a>            
+                
             </div>
-
-            <div id="content" class="box">
+            
+                <div class="box sidebar">
+                <h2>Sidebar</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+                 
+            </div>
+            
+            <div class="box content">
                 <h2>Content</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
-                <a href="#"><img id="toTopRight" src="images/arrow.png" alt="Link to top"></a>
+               
             </div>
-
+                
+            <div class="box sidebar">
+                <h2>Content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+                
+            </div>
             <div id="footer" class="box">
                 <h2>Footer</h2>
             </div>
